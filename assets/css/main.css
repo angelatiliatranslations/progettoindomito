@@ -2828,258 +2828,86 @@ input, select, textarea {
 
 /* Slider */
 
-.content-slider {
-  width: 100%;
-  height: 360px;
+.carousel {
+	width: 650px;
+	margin: 0 auto;
+	padding-bottom: 50px;
 }
-
-.slider {
-  height: 320px;
-  width: 680px;
-  margin: 40px auto 0;
-  overflow: visible;
-  position: relative;
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 340px;
 }
-
-.mask {
-  overflow: hidden;
-  height: 320px;
+.carousel .item a {
+	color: #eb7245;
 }
-
-.slider ul {
-  margin: 0;
-  padding: 0;
-  position: relative;
+.carousel .img-box {
+	width: 145px;
+	height: 145px;
+	margin: 0 auto;
+	border-radius: 50%;
 }
-
-.slider li {
-  width: 680px;
-  height: 320px;
-  position: absolute;
-  top: -325px;
-  list-style: none;
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
 }
-
-.slider .quote {
-  font-size: 40px;
-  font-style: italic;
+.carousel .testimonial {	
+	padding: 30px 0 10px;
 }
-
-.slider .source {
-  font-size: 20px;
-  text-align: right;
+.carousel .overview {	
+	text-align: center;
+	padding-bottom: 5px;
 }
-
-.slider li.anim1 {
-  animation: cycle 15s linear infinite;
+.carousel .overview b {
+	color: #333;
+	font-size: 15px;
+	text-transform: uppercase;
+	display: block;	
+	padding-bottom: 5px;
 }
-
-.slider li.anim2 {
-  animation: cycle2 15s linear infinite;
+.carousel .star-rating i {
+	font-size: 18px;
+	color: #ffdc12;
 }
-
-.slider li.anim3 {
-  animation: cycle3 15s linear infinite;
+.carousel .carousel-control {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+    background: #999;
+    text-shadow: none;
+	top: 4px;
 }
-
-.slider li.anim4 {
-  animation: cycle4 15s linear infinite;
+.carousel-control i {
+	font-size: 20px;
+	margin-right: 2px;
 }
-
-.slider li.anim5 {
-  animation: cycle5 15s linear infinite;
+.carousel-control.left {
+	left: auto;
+	right: 40px;
 }
-
-.slider:hover li {
-  animation-play-state: paused;
+.carousel-control.right i {
+	margin-right: -2px;
 }
-
-@keyframes cycle {
-  0% {
-	top: 0px;
-  }
-  4% {
-	top: 0px;
-  }
-  16% {
-	top: 0px;
-	opacity: 1;
-	z-index: 0;
-  }
-  20% {
-	top: 325px;
-	opacity: 0;
-	z-index: 0;
-  }
-  21% {
-	top: -325px;
-	opacity: 0;
-	z-index: -1;
-  }
-  50% {
-	top: -325px;
-	opacity: 0;
-	z-index: -1;
-  }
-  92% {
-	top: -325px;
-	opacity: 0;
-	z-index: 0;
-  }
-  96% {
-	top: -325px;
-	opacity: 0;
-  }
-  100% {
-	top: 0px;
-	opacity: 1;
-  }
+.carousel .carousel-indicators {
+	bottom: 15px;
 }
-
-@keyframes cycle2 {
-  0% {
-	top: -325px;
-	opacity: 0;
-  }
-  16% {
-	top: -325px;
-	opacity: 0;
-  }
-  20% {
-	top: 0px;
-	opacity: 1;
-  }
-  24% {
-	top: 0px;
-	opacity: 1;
-  }
-  36% {
-	top: 0px;
-	opacity: 1;
-	z-index: 0;
-  }
-  40% {
-	top: 325px;
-	opacity: 0;
-	z-index: 0;
-  }
-  41% {
-	top: -325px;
-	opacity: 0;
-	z-index: -1;
-  }
-  100% {
-	top: -325px;
-	opacity: 0;
-	z-index: -1;
-  }
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 11px;
+	height: 11px;
+	margin: 1px 5px;
+	border-radius: 50%;
 }
-
-@keyframes cycle3 {
-  0% {
-	top: -325px;
-	opacity: 0;
-  }
-  36% {
-	top: -325px;
-	opacity: 0;
-  }
-  40% {
-	top: 0px;
-	opacity: 1;
-  }
-  44% {
-	top: 0px;
-	opacity: 1;
-  }
-  56% {
-	top: 0px;
-	opacity: 1;
-	z-index: 0;
-  }
-  60% {
-	top: 325px;
-	opacity: 0;
-	z-index: 0;
-  }
-  61% {
-	top: -325px;
-	opacity: 0;
-	z-index: -1;
-  }
-  100% {
-	top: -325px;
-	opacity: 0;
-	z-index: -1;
-  }
+.carousel-indicators li {	
+	background: #e2e2e2;
+	border-color: transparent;
 }
-
-@keyframes cycle4 {
-  0% {
-	top: -325px;
-	opacity: 0;
-  }
-  56% {
-	top: -325px;
-	opacity: 0;
-  }
-  60% {
-	top: 0px;
-	opacity: 1;
-  }
-  64% {
-	top: 0px;
-	opacity: 1;
-  }
-  76% {
-	top: 0px;
-	opacity: 1;
-	z-index: 0;
-  }
-  80% {
-	top: 325px;
-	opacity: 0;
-	z-index: 0;
-  }
-  81% {
-	top: -325px;
-	opacity: 0;
-	z-index: -1;
-  }
-  100% {
-	top: -325px;
-	opacity: 0;
-	z-index: -1;
-  }
-}
-
-@keyframes cycle5 {
-  0% {
-	top: -325px;
-	opacity: 0;
-  }
-  76% {
-	top: -325px;
-	opacity: 0;
-  }
-  80% {
-	top: 0px;
-	opacity: 1;
-  }
-  84% {
-	top: 0px;
-	opacity: 1;
-  }
-  96% {
-	top: 0px;
-	opacity: 1;
-	z-index: 0;
-  }
-  100% {
-	top: 325px;
-	opacity: 0;
-	z-index: 0;
-  }
+.carousel-indicators li.active {
+	border: none;
+	background: #888;		
 }
 
 
